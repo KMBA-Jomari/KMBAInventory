@@ -1,11 +1,11 @@
 <div class="container lg-5">
 	<%= render "shared/navbar" %>
 	<h1>Home Page</h1>
-	<button type="button "class="btn btn-secondary">User</button>
-	<button type="button "class="btn btn-secondary">Role</button>
+	<%= link_to "Users", users_path, class: "btn btn-secondary" %>
+	<%= link_to "Roles", roles_path, class: "btn btn-secondary" %>
 	<%= link_to "Category", categories_path, class: "btn btn-secondary" %>
+	<%= link_to "Sub Categories", subcategories_path, class: "btn btn-secondary" %>
 	<%= link_to "UOM", uoms_path, class: "btn btn-secondary" %>
-	<button type="button "class="btn btn-secondary">Sub Category</button>
 	<%= link_to "Products", products_path, class: "btn btn-secondary" %>
 	<%= link_to "Suppliers", suppliers_path, class: "btn btn-secondary" %>
 </div>

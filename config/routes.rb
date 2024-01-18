@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :roles
+  resources :users
+  resources :subcategories
   resources :uoms
   resources :suppliers
   resources :categories
