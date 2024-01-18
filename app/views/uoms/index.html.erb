@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Uoms</h1>
+
+<div id="uoms">
+  <% @uoms.each do |uom| %>
+    <%= render uom %>
+    <p>
+      <%= link_to "Show this uom", uom %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New uom", new_uom_path %>
